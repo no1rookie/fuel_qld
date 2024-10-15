@@ -30,6 +30,27 @@ This project is focused on analyzing fuel prices in Queensland, Australia, and e
    - Convert transaction timestamps to a common datetime format to facilitate time series analysis.
    - Aggregate daily fuel prices (min, median, max) per fuel type and combine the data with crude oil and TGP data.
 
+### Data Model
+
+In this project, I used pandas DataFrame to manage the data, but for scaling up, we can consider using a database. Based on the fuel price data provided by Queensland, we can convert it into three related tables as illustrated in the following diagram:
+
+![Data Model](model.png)
+
+- **Fuel Station Table**: Contains details about each fuel station, including the `SiteId` as the primary key, along with attributes like `Site Name`, `Site Brand`, `Address`, and geolocation data.
+- **Fuel Prices Table**: Stores the fuel price data for different fuel types at each station. This table has foreign keys referencing `SiteId` from the Fuel Station table and `FuelTypeId` from the Fuel Types table.
+- **Fuel Types Table**: A lookup table that stores different fuel types with a `FuelTypeId` as the primary key and the `Fuel Name` as an attribute.
+
+### DataFrame-Based Analysis
+
+For the analysis, I utilized pandas DataFrames to replicate a database-like structure:
+- **Primary Key (`SiteId`)**: The `SiteId` column was used as the key to uniquely identify each fuel station. I applied this column to merge and filter data, similar to how primary keys work in relational databases.
+- **DataFrames as Tables**: I created separate DataFrames for different analysis purposes:
+  - The main DataFrame containing fuel price data was filtered based on fuel types, dates, and site information to mimic the functionality of SQL `JOIN` and `WHERE` clauses.
+  - I often copied the DataFrame and worked on subsets (like the price trends of specific fuel types or price comparisons among brands) to analyze data just like you would when querying separate tables in a database.
+- **Efficient Analysis**: By using pandas, I could efficiently group data, calculate price ranges, and perform operations like min/max/median aggregations on fuel prices over time. This method allowed for more flexible data exploration while avoiding the overhead of setting up a full-scale database.
+
+Overall, using pandas DataFrames allowed for a simpler and faster workflow for data analysis, while also giving flexibility to handle data in a relational format if scaling up to a database becomes necessary in the future.
+
 ### 3. Data Analysis
    - **Price Trend Analysis**: Analyze and visualize price trends for different fuel types over time, alongside crude oil and TGP price trends.
    - **Brand and Site Analysis**: Identify major fuel brands and examine site-level price variations across Queensland.
