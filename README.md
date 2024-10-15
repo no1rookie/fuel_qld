@@ -45,7 +45,7 @@ To make this project work, I performed specific actions with each data source, a
 
 The project uses pandas DataFrames to manage and analyze data. Although I initially used DataFrames, I designed the project with potential scaling in mind, where moving to a full database would be more efficient. Based on Queensland fuel data, I structured the data into three related tables as shown in the following diagram:
 
-![Data Model](model.png)
+![Data Model](pics/model.png)
 
 - **Fuel Station Table**: Contains details about fuel stations, with `SiteId` as the primary key.
 - **Fuel Prices Table**: Stores price data per station, referencing `SiteId` and `FuelTypeId`.
@@ -108,3 +108,4 @@ This project lays the groundwork for a more robust fuel price analysis system. M
 ## Follow-ups and Web Applications
 
 After completing this data analysis, I developed simple web apps to display real-time fuel price data. You can explore these apps in my other repositories. Keep an eye out for updates and additional features!
+
