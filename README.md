@@ -74,18 +74,42 @@ The project uses pandas DataFrames to manage and analyze data. Although I initia
 
 During the data analysis phase, I uncovered several important insights regarding fuel price behavior in Queensland:
 
-### 0. Pre-processing
+### Pre-processing
 - **Duplicates**: I found 4 duplicates in the Queensland Fuel Price data. These duplicates occurred on February 2, May 12, July 1, and September 24. You can see more details about how these were handled in the data cleaning part.
 - **Site Name and Brand Changes**: I discovered that some fuel stations had different Site Names and Brands but shared the same `SiteId`. This suggests that these stations may have changed names or brands over time. This finding opens up an interesting topic for future research: studying fuel station brand market share or trends. I will leave this for future analysis.
 
-### 1. Mid-price Correlation with Crude Oil vs. TGP: 
-   - My analysis showed that the **mid-price** (median price) of fuel is more closely correlated with crude oil prices than with Terminal Gate Pricing (TGP). This suggests that global oil market trends have a stronger influence on retail fuel prices than wholesale fuel pricing in this region.
+### Unleaded Petrol Prices:
+- My analysis showed that the **mid-price** (median price) of fuel is more closely correlated with crude oil prices than with Terminal Gate Pricing (TGP). This suggests that global oil market trends have a stronger influence on retail fuel prices than wholesale fuel pricing in this region.
+- The petrol median price chart exhibits clear seasonality and price peaks. This could be influenced by several factors:
+  - **Storage Costs**: Higher costs during periods of increased demand (e.g., holidays, summer) and capacity constraints could affect prices.
+  - **Transportation Costs**: Delays due to weather or infrastructure limitations may increase costs, especially during certain seasons.
+  - **Market Dynamics**: Price speculation based on crude oil trends or anticipated demand surges might contribute to the observed peaks.
+  - **Regulatory Adjustments**: Temporary fuel levies or tax changes could also exacerbate price fluctuations during certain times of the year.
 
 ![Data Model](pics/price_chart.png)
 
-   (Optional: You can include a chart or visual representation here if applicable.)
+### Diesel Prices:
+- Diesel prices do not show the same seasonal trends or price peaks as petrol. This stability could be due to:
+  - **Consistent Demand**: Diesel is used primarily for commercial purposes, with relatively stable year-round demand.
+  - **Bulk Purchases & Contracts**: Large-scale buyers often enter into long-term contracts, mitigating short-term price fluctuations.
+  - **Less Speculation**: Diesel is less subject to consumer-driven speculation, contributing to smoother price movements.
+  - **Stable Infrastructure**: Diesel storage and transportation systems are more established for industrial use, leading to fewer disruptions.
 
-### 2. Other findings (add more insights as needed):
+![Data Model](pics/diesel_chart.png)
+
+### Comparison (Petrol vs Diesel):
+- While unleaded petrol exhibits more variability and seasonality, diesel prices remain more stable throughout the year. This contrast can be largely attributed to the differences in demand profiles and supply chain structures between consumer fuel and commercial fuel.
+
+### Further Research:
+- For a deeper understanding of the relationship between fuel prices and underlying factors (e.g., storage, transportation, market dynamics), advanced **machine learning (ML) techniques** could be applied. Some potential approaches include:
+  - **Time Series Forecasting Models**: Techniques like **ARIMA**, **Prophet**, or **LSTM** (Long Short-Term Memory networks) could be used to model and predict future price trends, accounting for seasonality, external factors like crude oil prices, and other economic indicators.
+  - **Regression Analysis**: Multi-variable regression can help quantify the impact of various factors (e.g., storage costs, transportation delays, crude oil price changes) on fuel prices.
+  - **Clustering Algorithms**: Using unsupervised learning methods such as **K-means** clustering or **DBSCAN**, fuel stations could be grouped based on pricing patterns, regional trends, or supply chain characteristics.
+  - **Feature Engineering**: Create new features based on external data (e.g., weather conditions, exchange rates, fuel consumption patterns) to explore hidden correlations and improve prediction accuracy.
+
+- **Further research** using these approaches could provide more accurate predictions of price fluctuations and identify the key drivers behind them, offering valuable insights into optimizing fuel pricing strategies and supply chain management.
+
+### Other findings (add more insights as needed):
    - Insight 2...
    - Insight 3...
 
