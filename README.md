@@ -81,6 +81,8 @@ During the data analysis phase, I uncovered several important insights regarding
 ### 1. Mid-price Correlation with Crude Oil vs. TGP: 
    - My analysis showed that the **mid-price** (median price) of fuel is more closely correlated with crude oil prices than with Terminal Gate Pricing (TGP). This suggests that global oil market trends have a stronger influence on retail fuel prices than wholesale fuel pricing in this region.
 
+![Data Model](pics/price_chart.png)
+
    (Optional: You can include a chart or visual representation here if applicable.)
 
 ### 2. Other findings (add more insights as needed):
