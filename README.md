@@ -28,7 +28,7 @@ To make this project work, I performed specific actions with each data source, a
 
 ## Project Workflow
 
-### 1. Data Collection and Preprocessing
+### 1. Data Collection
    - **Queensland Fuel Data**: Retrieved via CSV files, cleaned (e.g., removed `9999` values indicating no stock), and saved for analysis.
      - File: `fuel_prices_OOO_2024.csv`
    - **Crude Oil Prices**: Downloaded and cleaned to ensure date alignment with fuel price data for time series analysis.
@@ -36,12 +36,20 @@ To make this project work, I performed specific actions with each data source, a
    - **TGP Data**: Downloaded, cleaned, and integrated with fuel prices to track the impact of wholesale fuel costs on retail prices.
      - Files: `Petrol TGP-Table 1.csv`, `Diesel TGP-Table 1.csv`
 
-### 2. Preprocessing for Data Analysis
+### 2. Data Cleaning 
+   - Cleaned fuel price data by removing invalid values (e.g., 9999 for out-of-stock).
+   - Ensured the data was properly formatted for time series analysis by converting timestamps.
+
+### 3. Data Preprocessing 
    - Removed price outliers using the interquartile range (IQR) method.
    - Converted transaction timestamps to a consistent datetime format for time series analysis.
-   - Aggregated daily fuel prices (min, median, max) per fuel type, combining them with crude oil and TGP data for comprehensive analysis.
+   - Used the IQR method to handle outliers in fuel price data.
+   - Aggregated daily fuel prices (min, median, max) per fuel type.
+   
+### 4. Data Integration
+   - Integrated crude oil and TGP data with fuel prices to allow comparison of trends over time.
 
-### 3. Data Model
+## Data Model
 
 The project uses pandas DataFrames to manage and analyze data. Although I initially used DataFrames, I designed the project with potential scaling in mind, where moving to a full database would be more efficient. Based on Queensland fuel data, I structured the data into three related tables as shown in the following diagram:
 
@@ -51,16 +59,33 @@ The project uses pandas DataFrames to manage and analyze data. Although I initia
 - **Fuel Prices Table**: Stores price data per station, referencing `SiteId` and `FuelTypeId`.
 - **Fuel Types Table**: Lookup table for fuel types, identified by `FuelTypeId`.
 
-### 4. Data Analysis
+## Data Analysis
    - **Price Trend Analysis**: I visualized price trends for different fuel types over time, comparing them to crude oil and TGP trends.
    - **Brand and Site Analysis**: I analyzed the distribution of fuel brands and the variation in prices across Queensland stations.
    - **Geospatial Analysis**: I created maps to visualize fuel prices across different regions, allowing for comparisons by fuel type and brand.
    - **Current Price Snapshot**: Displayed recent fuel prices across Queensland, color-coded to highlight price variations.
 
-### 5. Visualizations
+## Visualizations
    - **Price Trend Charts**: Historical price trends for different fuel types, crude oil, and TGP data.
    - **Geospatial Maps**: Interactive maps showing fuel price ranges at stations across Queensland.
    - **Current Price Distribution**: Snapshot of current fuel prices across regions with visual indicators for price differences.
+
+## Findings
+
+During the data analysis phase, I uncovered several important insights regarding fuel price behavior in Queensland:
+
+### 0. Pre-processing
+- **Duplicates**: I found 4 duplicates in the Queensland Fuel Price data. These duplicates occurred on February 2, May 12, July 1, and September 24. You can see more details about how these were handled in the data cleaning part.
+- **Site Name and Brand Changes**: I discovered that some fuel stations had different Site Names and Brands but shared the same `SiteId`. This suggests that these stations may have changed names or brands over time. This finding opens up an interesting topic for future research: studying fuel station brand market share or trends. I will leave this for future analysis.
+
+### 1. Mid-price Correlation with Crude Oil vs. TGP: 
+   - My analysis showed that the **mid-price** (median price) of fuel is more closely correlated with crude oil prices than with Terminal Gate Pricing (TGP). This suggests that global oil market trends have a stronger influence on retail fuel prices than wholesale fuel pricing in this region.
+
+   (Optional: You can include a chart or visual representation here if applicable.)
+
+### 2. Other findings (add more insights as needed):
+   - Insight 2...
+   - Insight 3...
 
 ## Decisions and Considerations
 
