@@ -109,7 +109,7 @@ During the data analysis phase, I uncovered several important insights regarding
 
 - **Further research** using these approaches could provide more accurate predictions of price fluctuations and identify the key drivers behind them, offering valuable insights into optimizing fuel pricing strategies and supply chain management.
 
-### Other findings (add more insights as needed):
+### Other findings:
    - Insight 2...
    - Insight 3...
 
