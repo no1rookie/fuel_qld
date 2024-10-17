@@ -190,3 +190,10 @@ This project lays the groundwork for a more robust fuel price analysis system. M
 
 After completing this data analysis, I developed simple web apps to display real-time fuel price data. You can explore these apps in my other repositories. Keep an eye out for updates and additional features!
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Copyright
+
+© 2024 Marcus Kim. All rights reserved.
