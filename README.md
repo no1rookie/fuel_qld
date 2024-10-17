@@ -72,6 +72,8 @@ The project uses pandas DataFrames to manage and analyze data. Although I initia
 
 ## Findings
 
+> **Note**: I'm currently summarizing my findings. More will be added here soon.
+
 During the data analysis phase, I uncovered several important insights regarding fuel price behavior in Queensland:
 
 ### Data Pre-processing Insights
@@ -122,9 +124,24 @@ During the data analysis phase, I uncovered several important insights regarding
 
 - **Further research** using these approaches could provide more accurate predictions of price fluctuations and identify the key drivers behind them, offering valuable insights into optimizing fuel pricing strategies and supply chain management.
 
-### Other findings:
-   - Insight 2...
-   - Insight 3...
+### Ongoing Work and Questions
+
+> **Note**: These sections are placeholders for future findings as I continue my analysis.
+
+#### Price Distribution Among Regions
+- **Work in Progress**: I'm analyzing how fuel prices vary across different regions. More details and findings will be added soon.
+
+#### Price Distribution Per Brand
+- **Work in Progress**: I'm investigating price differences between fuel brands. More insights will follow shortly.
+
+#### Which Station is Cheaper?
+- **Work in Progress**: I'm identifying the fuel stations with consistently lower prices. Findings will be updated soon.
+
+#### How Much Can I Save Per Year?
+- **Work in Progress**: I'm calculating potential yearly savings based on fuel price differences across stations and regions. Stay tuned for results.
+
+#### What If I Am the Owner of a Fuel Station?
+- **Work in Progress**: I'm exploring the financial dynamics of owning a fuel station. Findings will be posted soon.
 
 ## Decisions and Considerations
 
