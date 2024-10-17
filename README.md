@@ -74,11 +74,11 @@ The project uses pandas DataFrames to manage and analyze data. Although I initia
 
 During the data analysis phase, I uncovered several important insights regarding fuel price behavior in Queensland:
 
-### Pre-processing
+### Data Pre-processing Insights
 - **Duplicates**: I found 4 duplicates in the Queensland Fuel Price data. These duplicates occurred on February 2, May 12, July 1, and September 24. You can see more details about how these were handled in the data cleaning part.
 - **Site Name and Brand Changes**: I discovered that some fuel stations had different Site Names and Brands but shared the same `SiteId`. This suggests that these stations may have changed names or brands over time. This finding opens up an interesting topic for future research: studying fuel station brand market share or trends. I will leave this for future analysis.
 
-### Unleaded Petrol Prices:
+### Unleaded Petrol Prices
 - My analysis showed that the **mid-price** (median price) of fuel is more closely correlated with crude oil prices than with Terminal Gate Pricing (TGP). This suggests that global oil market trends have a stronger influence on retail fuel prices than wholesale fuel pricing in this region.
 - The petrol median price chart exhibits clear seasonality and price peaks. This could be influenced by several factors:
   - **Storage Costs**: Higher costs during periods of increased demand (e.g., holidays, summer) and capacity constraints could affect prices.
@@ -88,7 +88,7 @@ During the data analysis phase, I uncovered several important insights regarding
 
 ![Data Model](pics/price_chart.png)
 
-### Diesel Prices:
+### Diesel Prices
 - Diesel prices do not show the same seasonal trends or price peaks as petrol. This stability could be due to:
   - **Consistent Demand**: Diesel is used primarily for commercial purposes, with relatively stable year-round demand.
   - **Bulk Purchases & Contracts**: Large-scale buyers often enter into long-term contracts, mitigating short-term price fluctuations.
@@ -97,8 +97,21 @@ During the data analysis phase, I uncovered several important insights regarding
 
 ![Data Model](pics/diesel_chart.png)
 
-### Comparison (Petrol vs Diesel):
+### Comparison (Petrol vs Diesel)
 - While unleaded petrol exhibits more variability and seasonality, diesel prices remain more stable throughout the year. This contrast can be largely attributed to the differences in demand profiles and supply chain structures between consumer fuel and commercial fuel.
+
+### PULP 98 RON Prices
+- Similar to **unleaded petrol**, the **mid-price** (median price) of PULP 98 RON also shows a closer correlation with **crude oil prices** than with Terminal Gate Pricing (TGP). This suggests that global oil market dynamics play a significant role in retail prices, even for higher-octane fuels.
+- The seasonal **price peaks** and **trends** seen in the PULP 98 RON chart align with those observed for unleaded petrol. These could similarly be influenced by factors such as:
+  - **Storage Costs** during peak periods,
+  - **Transportation Costs**, especially during seasonal changes,
+  - **Market Speculation** tied to crude oil trends, and
+  - **Regulatory Impacts**, such as fuel taxes or levies.
+
+![PULP 98 RON Price Chart](pics/p98_chart.png)
+
+### Comparison with Unleaded Petrol
+- Both **PULP 98 RON** and **unleaded petrol** exhibit strong price variability and seasonal peaks, indicating that despite differences in fuel type and octane rating, they are subject to similar market and logistical pressures. However, higher-octane fuel like PULP 98 RON might also have additional market segmentation based on consumer preferences for premium fuels.
 
 ### Further Research:
 - For a deeper understanding of the relationship between fuel prices and underlying factors (e.g., storage, transportation, market dynamics), advanced **machine learning (ML) techniques** could be applied. Some potential approaches include:
