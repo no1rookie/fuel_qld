@@ -4,9 +4,30 @@
 
 This project focuses on analyzing fuel prices in Queensland, Australia, and examining the relationships between local fuel prices, global crude oil prices, and Terminal Gate Pricing (TGP). While adapting to life in Australia, I became intrigued by how fuel prices are determined. My curiosity sparked this research and project to better understand fuel price movements in the country.
 
-### Personal Experience
+## Personal Experience
 
-As a recent arrival in Australia, fuel prices piqued my interest, especially given their daily fluctuations. I began investigating how prices are set by exploring factors such as global crude oil prices and the wholesale pricing system known as TGP. After studying fuel price trends this year, I conducted detailed analyses and visualizations, revealing various patterns and insights.
+I started this project after moving to Brisbane, Queensland, where owning a car is essential, and fuel prices take up a significant portion of my living costs. To manage these expenses effectively, I began studying fuel prices in more depth. This led me to explore key questions about how fuel pricing works and how to make smarter refueling decisions:
+
+1. **How are fuel prices determined in Queensland?**  
+   - What factors influence fuel prices, and how do they correlate with global crude oil prices?  
+   - How do different fuel types (e.g., unleaded, diesel) impact pricing?
+
+2. **Where can I find the most affordable fuel stations?**  
+   - What defines a "cheap" fuel station, and how can I identify them?  
+   - How much can I save by consistently choosing cheaper stations?
+
+3. **When is the best time to refuel?**  
+   - Are there seasonal trends or regular fluctuations in fuel prices?  
+   - Is it worth traveling to a cheaper station, and how do regional price differences affect my trip costs?
+
+4. **Which fuel brand offers the best value?**  
+   - Are there noticeable price differences between fuel brands?  
+   - Do loyalty programs or discounts from specific brands provide significant savings?
+
+5. **Can I predict future fuel prices at specific stations?**  
+   - Can machine learning techniques and key features help forecast fuel prices at my nearest station?
+
+By answering these questions, I aim to gain a better understanding of fuel prices in Queensland and provide practical insights for managing fuel expenses more effectively.
 
 The Queensland Government offers real-time fuel price data through an API, so I took advantage of this by developing a simple web app to fetch and display live price information. The analysis and findings from this project have been both educational and engaging, and I hope they provide useful insights to others interested in this topic.
 
@@ -114,15 +135,6 @@ During the data analysis phase, I uncovered several important insights regarding
 
 ### Comparison with Unleaded Petrol
 - Both **PULP 98 RON** and **unleaded petrol** exhibit strong price variability and seasonal peaks, indicating that despite differences in fuel type and octane rating, they are subject to similar market and logistical pressures. However, higher-octane fuel like PULP 98 RON might also have additional market segmentation based on consumer preferences for premium fuels.
-
-### Further Research:
-- For a deeper understanding of the relationship between fuel prices and underlying factors (e.g., storage, transportation, market dynamics), advanced **machine learning (ML) techniques** could be applied. Some potential approaches include:
-  - **Time Series Forecasting Models**: Techniques like **ARIMA**, **Prophet**, or **LSTM** (Long Short-Term Memory networks) could be used to model and predict future price trends, accounting for seasonality, external factors like crude oil prices, and other economic indicators.
-  - **Regression Analysis**: Multi-variable regression can help quantify the impact of various factors (e.g., storage costs, transportation delays, crude oil price changes) on fuel prices.
-  - **Clustering Algorithms**: Using unsupervised learning methods such as **K-means** clustering or **DBSCAN**, fuel stations could be grouped based on pricing patterns, regional trends, or supply chain characteristics.
-  - **Feature Engineering**: Create new features based on external data (e.g., weather conditions, exchange rates, fuel consumption patterns) to explore hidden correlations and improve prediction accuracy.
-
-- **Further research** using these approaches could provide more accurate predictions of price fluctuations and identify the key drivers behind them, offering valuable insights into optimizing fuel pricing strategies and supply chain management.
 
 ### Ongoing Work and Questions
 
