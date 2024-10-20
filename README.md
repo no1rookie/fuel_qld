@@ -14,7 +14,10 @@ I started this project after moving to Brisbane, Queensland, where owning a car 
 
 2. **Where can I find the most affordable fuel stations?**  
    - What defines a "cheap" fuel station, and how can I identify them?  
+   - Should I compare the station's price to the Queensland average, nearby stations, or focus on price skewness (mean vs. median)?  
+   - Are there stations that consistently offer lower prices over time?
    - How much can I save by consistently choosing cheaper stations?
+   - What if I'm near an extremely cheap station—should I fill up immediately, and how much should I refuel?
 
 3. **When is the best time to refuel?**  
    - Are there seasonal trends or regular fluctuations in fuel prices?  
@@ -38,6 +41,7 @@ To make this project work, I performed specific actions with each data source, a
 1. **Queensland Fuel Price Data (2024)**
    - Source: [Queensland Government Open Data Portal](https://www.data.qld.gov.au/dataset/fuel-price-reporting-2024)
    - I downloaded monthly CSV files from this dataset and saved them as `fuel_prices_OOO_2024.csv`, where "OOO" is a 3-letter abbreviation for each month (e.g., JAN, FEB, etc.). The files contain real-time and historical fuel price data, site information, and geographic locations for stations across Queensland.
+   - With the API provided by the Queensland Government, I now fetch real-time fuel prices directly. The historical data is a collection of snapshots of the real-time data as it was updated, allowing me to track price changes over time. If needed, I can create a time-series database to capture and store real-time data, which would enable me to compare it against historical data and validate trends.
 
 2. **Crude Oil Prices**
    - Source: [Investing.com Crude Oil Historical Data](https://www.investing.com/commodities/crude-oil-historical-data)
