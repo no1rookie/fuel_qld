@@ -154,7 +154,7 @@ During the data analysis phase, I uncovered several important insights regarding
 ![](pics/price_dist_map_p98.png)
 
 ### 3. 95th Percentile Analysis
-- Given the significant price outliers in some regions, I visualized stations with prices below the **95th percentile** to focus on more typical price ranges and eliminate extreme outliers. This revealed that even within **95% of the distribution**, islands tend to be significantly more expensive than the mainland. The **histograms** and **maps** below illustrate this analysis.  
+- Given the significant price outliers in some regions, I visualized stations with prices below the **95th percentile** to focus on more typical price ranges and eliminate extreme outliers. Interestingly, **stations on islands are mostly excluded** from this view, as their prices tend to fall **above the 95th percentile**, highlighting their extreme cost compared to mainland stations. Instead, this analysis shows the **regional price distributions** more clearly, with **coastal regions and the southern part of Queensland** being relatively cheaper. The **histograms** and **maps** below illustrate this analysis.
 ![](pics/pmap95_unleaded.png)
 ![](pics/pmap95_diesel.png)
 ![](pics/pmap95_p98.png)
