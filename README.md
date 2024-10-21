@@ -140,6 +140,37 @@ During the data analysis phase, I uncovered several important insights regarding
 ### Comparison with Unleaded Petrol
 - Both **PULP 98 RON** and **unleaded petrol** exhibit strong price variability and seasonal peaks, indicating that despite differences in fuel type and octane rating, they are subject to similar market and logistical pressures. However, higher-octane fuel like PULP 98 RON might also have additional market segmentation based on consumer preferences for premium fuels.
 
+
+## Fuel Price Patterns and Opportunities for Further Analysis
+
+### 1. Price Distribution is Right-Skewed
+- After analyzing the price distribution, I found that fuel prices are heavily **right-skewed**. This means that while most stations cluster around the lower and mid-price range, there are some stations with extremely high prices that pull the average upward. Because of this skewness, the **median price** provides a more reliable benchmark for identifying “cheap” stations, as the average tends to overestimate the typical price due to a few outliers. The histograms below demonstrate this right-skewed nature.  
+![](pics/fuel_price_histograms.png)
+
+### 2. Regional Price Differences
+- Fuel prices vary significantly across Queensland, with the **coastal regions** and **southern parts of Queensland** offering lower prices compared to **northern** and **inland regions**. Notably, fuel prices on **islands** are extremely high compared to the rest of the state. This is especially visible when mapping price differences relative to the median. By calculating the price differences from the median for each station, I labeled stations with **positively larger differences as more expensive**, and those with **negatively larger differences as cheaper**.  
+![](pics/price_dist_map_unleaded.png) 
+![](pics/price_dist_map_diesel.png) 
+![](pics/price_dist_map_p98.png)
+
+### 3. 95th Percentile Analysis
+- Given the significant price outliers in some regions, I visualized stations with prices below the **95th percentile** to focus on more typical price ranges and eliminate extreme outliers. This revealed that even within **95% of the distribution**, islands tend to be significantly more expensive than the mainland. The **histograms** and **maps** below illustrate this analysis.  
+![](pics/pmap95_unleaded.png)
+![](pics/pmap95_diesel.png)
+![](pics/pmap95_p98.png)
+
+### 4. Consistently Affordable Areas
+- The **coastal regions** and **southern Queensland** not only offer cheaper fuel on average but also tend to have clusters of stations that consistently offer prices below the median over time. This suggests that for long-term fuel cost savings, these areas are more likely to have affordable options.
+
+### 5. Brisbane and Gold Coast Insights
+- When zooming into **Brisbane City** and the **Gold Coast**, there are noticeable **clusters of stations** with lower prices, but significant price variability remains. These clusterings suggest that even in urban areas, there are local price pockets where consistent savings can be achieved. The map below highlights these clusters and price differences.  
+![](pics/pmap95_BG_unleaded.png)
+![](pics/pmap95_BG_diesel.png)
+![](pics/pmap95_BG_p98.png)
+
+### 6. Next Steps: Investigating Consistency of Cheap Stations
+- While the map provides a useful snapshot of current fuel prices, it raises important questions about consistency. **Are these price patterns recurring over time?** Can we identify stations that consistently offer lower prices? To answer this, we need to analyze **historical data** and possibly use **machine learning** models to predict price trends and identify patterns of consistently cheaper stations. This could help further refine refueling strategies and uncover long-term cost-saving opportunities.
+
 ### Ongoing Work and Questions
 
 > **Note**: These sections are placeholders for future findings as I continue my analysis.
