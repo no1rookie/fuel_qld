@@ -168,8 +168,14 @@ During the data analysis phase, I uncovered several important insights regarding
 ![](pics/pmap95_BG_diesel.png)
 ![](pics/pmap95_BG_p98.png)
 
-### 6. Next Steps: Investigating Consistency of Cheap Stations
-- While the map provides a useful snapshot of current fuel prices, it raises important questions about consistency. **Are these price patterns recurring over time?** Can we identify stations that consistently offer lower prices? To answer this, we need to analyze **historical data** and possibly use **machine learning** models to predict price trends and identify patterns of consistently cheaper stations. This could help further refine refueling strategies and uncover long-term cost-saving opportunities.
+### 6. Next Steps: Exploring Regional Fuel Prices on Tableau
+- I’ve created several interactive sheets on **Tableau Public**, where you can explore real-time fuel price data from Queensland. The data was extracted from the QLD open data API, processed, and uploaded to Tableau for further analysis.
+
+You can now select different fuel types and view regional **median price heatmaps**. Additionally, the sheets provide insights into the **number of stations** and the **real-time prices** for all stations across Queensland. This interactive platform enables a deeper dive into fuel price trends across various regions and fuel types.
+
+I will continue adding new features and updates to these Tableau sheets, with the goal of building a comprehensive dashboard that tracks fuel price trends and patterns over time.
+
+***Check out the Tableau Public page [here](https://public.tableau.com/app/profile/marcus.kim8721/viz/region_test/RealtimeFuelPriceMap).***
 
 ### Ongoing Work and Questions
 
