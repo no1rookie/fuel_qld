@@ -175,7 +175,7 @@ You can now select different fuel types and view regional **median price heatmap
 
 I will continue adding new features and updates to these Tableau sheets, with the goal of building a comprehensive dashboard that tracks fuel price trends and patterns over time.
 
-***Check out the Tableau Public page [here](https://public.tableau.com/app/profile/marcus.kim8721/viz/region_test/RealtimeFuelPriceMap).***
+***Check out the Tableau Public page [here](https://public.tableau.com/app/profile/marcus.kim8721/viz/fuel_map_1/RegionMedianPrice).***
 
 ### Ongoing Work and Questions
 
