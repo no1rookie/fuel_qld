@@ -2,19 +2,36 @@
 
 ## Tableau Visualization
 
-To enhance accessibility and provide a clear view of current fuel price distribution, I developed an interactive Tableau dashboard that displays real-time fuel prices across Queensland. The dashboard was created using real-time price data extracted from the Queensland Government's open API, which was transformed and optimized for use in Tableau.
+To provide accessible, real-time insights into fuel prices across Queensland, I developed two interactive Tableau dashboards. These dashboards are powered by data extracted from the Queensland Government's open API, transformed and optimized for display in Tableau. Currently, data is manually uploaded to Tableau Public, but integration with Tableau Server could automate updates directly from the API for continuous real-time availability.
+
+### Dashboard 1: Current Fuel Price Distribution
+
+This dashboard offers a comprehensive view of current fuel prices across Queensland, helping users identify pricing patterns and competitive stations at a glance.
 
 - **Dashboard Features**:
-  - **Fuel Type, Brand, and Region Filters**: Select your preferred fuel type, brand, and specific region to view tailored insights.
+  - **Fuel Type, Brand, and Region Filters**: Select fuel type, brand, and specific region to view tailored fuel price data.
   - **Dual Map View**:
-    - **Queensland Map**: Shows regional fuel price differences, providing a high-level view of price trends across the state.
-    - **Detailed Region Map**: Zooms into the selected region and displays price ranges for each site, with colors indicating relative price levels.
-  - **Hover Information**: When hovering over a site on the regional map, you can view that site's price relative to regional and state-wide levels, giving additional context on whether a station offers competitive pricing.
+    - **Queensland Map**: Provides a statewide overview of regional fuel price differences, allowing for high-level trend analysis.
+    - **Detailed Region Map**: Focuses on the selected region, displaying each site with color-coded price ranges for easy identification of relative prices.
+  - **Hover Information**: Hovering over a site on the regional map reveals the station's price relative to the region and state averages, offering a quick assessment of its competitiveness.
 
-- **Data Automation and Upload**:
-  - While I currently upload CSV files manually to Tableau Public, this process could be easily automated using Tableau Server. Tableau Server would enable direct integration with real-time data from the Queensland API, allowing for seamless, continuous updates without manual intervention.
+***Explore the Current Fuel Price Distribution dashboard [here](https://public.tableau.com/app/profile/marcus.kim8721/viz/fuel_map/Dashboard1).***
 
-***Explore the Tableau dashboard [here](https://public.tableau.com/app/profile/marcus.kim8721/viz/fm3/Dashboard1).***
+### Dashboard 2: Fuel Price Comparison and Cost Impact
+
+This additional dashboard helps users understand potential extra costs incurred by refueling at higher-priced stations within a region. It provides a breakdown of fuel price distribution by brand and highlights how much more (or less) you might pay when filling up.
+
+- **Dashboard Features**:
+  - **Filter Options**: Select fuel type, region, and brand as needed to customize the analysis.
+  - **Price Distribution by Brand**: Box plots display the price distribution for each brand in the selected region, with reference lines indicating the average and median regional prices.
+  - **Cost Comparison for Filling 50L**: Shows potential cost differences compared to the median price if you fill up 50 liters at a selected station.
+
+- **Example Insight**:
+  - In Brisbane, the most expensive unleaded station, **7-Eleven Brisbane East**, has a price of 209.9 cents per liter. Filling up 50 liters at this station would cost **$22 more than the median-priced site** and **$27 more than the cheapest site** in the region.
+
+***Explore the Fuel Price Comparison and Cost Impact dashboard [here](https://public.tableau.com/app/profile/marcus.kim8721/viz/fm3/Dashboard2).***
+
+These dashboards collectively offer a powerful toolset for exploring fuel price variations across Queensland, helping users make informed decisions on where and when to refuel.
 
 ## Project Overview
 
