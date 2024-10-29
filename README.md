@@ -1,5 +1,21 @@
 # Queensland Fuel Price Data Analysis Project
 
+## Tableau Visualization
+
+To enhance accessibility and provide a clear view of current fuel price trends, I developed an interactive Tableau dashboard that displays real-time fuel prices across Queensland. The dashboard was created using real-time price data extracted from the Queensland Government's open API, which was transformed and optimized for use in Tableau.
+
+- **Dashboard Features**:
+  - **Fuel Type, Brand, and Region Filters**: Select your preferred fuel type, brand, and specific region to view tailored insights.
+  - **Dual Map View**:
+    - **Queensland Map**: Shows regional fuel price differences, providing a high-level view of price trends across the state.
+    - **Detailed Region Map**: Zooms into the selected region and displays price ranges for each site, with colors indicating relative price levels.
+  - **Hover Information**: When hovering over a site on the regional map, you can view that site's price relative to regional and state-wide levels, giving additional context on whether a station offers competitive pricing.
+
+- **Data Automation and Upload**:
+  - While I currently upload CSV files manually to Tableau Public, this process could be easily automated using Tableau Server. Tableau Server would enable direct integration with real-time data from the Queensland API, allowing for seamless, continuous updates without manual intervention.
+
+***Explore the Tableau dashboard [here](https://public.tableau.com/app/profile/marcus.kim8721/viz/fm3/Dashboard1).***
+
 ## Project Overview
 
 This project focuses on analyzing fuel prices in Queensland, Australia, and examining the relationships between local fuel prices, global crude oil prices, and Terminal Gate Pricing (TGP). While adapting to life in Australia, I became intrigued by how fuel prices are determined. My curiosity sparked this research and project to better understand fuel price movements in the country.
