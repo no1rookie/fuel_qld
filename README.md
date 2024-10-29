@@ -2,7 +2,7 @@
 
 ## Tableau Visualization
 
-To enhance accessibility and provide a clear view of current fuel price trends, I developed an interactive Tableau dashboard that displays real-time fuel prices across Queensland. The dashboard was created using real-time price data extracted from the Queensland Government's open API, which was transformed and optimized for use in Tableau.
+To enhance accessibility and provide a clear view of current fuel price distribution, I developed an interactive Tableau dashboard that displays real-time fuel prices across Queensland. The dashboard was created using real-time price data extracted from the Queensland Government's open API, which was transformed and optimized for use in Tableau.
 
 - **Dashboard Features**:
   - **Fuel Type, Brand, and Region Filters**: Select your preferred fuel type, brand, and specific region to view tailored insights.
